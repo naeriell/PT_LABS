@@ -534,6 +534,7 @@ class Program
         return array;
     }
 
+    //реализовать рекурсивно
     static int DigitSum(int number)
     {
         int sum = 0;
