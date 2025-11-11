@@ -29,7 +29,25 @@ namespace OOP_Basics
 
         public void PrintEquation()
         {
-            System.Console.WriteLine($"y = {A}x + {B}");
+            if (this.A == 0)
+            {
+                System.Console.WriteLine($"y = {B}");
+            }
+
+            else if (this.B == 0)
+            {
+                System.Console.WriteLine($"y = {A}x");
+            }
+
+            else if (this.B < 0)
+            {
+                System.Console.WriteLine($"y = {A}x - {Math.Abs(B)}");
+            }
+
+            else
+            {
+                System.Console.WriteLine($"y = {A}x + {B}");
+            }
         }
     }
 }
